@@ -1,0 +1,8 @@
+CREATE TABLE `vzv` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` CHAR (16) NOT NULL,
+    `phone` CHAR (16) NOT NULL,
+    `created` DATE NOT NULL,
+    PRIMARY KEY (`id`),
+    INDEX `vzv__phone` (`phone`),
+) ENGINE='InnoDB' DEFAULT CHARACTER SET 'UTF8';
